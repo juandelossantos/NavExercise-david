@@ -2,11 +2,11 @@
 console.log('cargado con exito');
 
 // Function to switch submenu
-function toggleHugesubmenu(div1, div2){
+function toggleHugesubmenu(div1, div2) {
   var el1 = document.getElementById(div1);
   var el2 = document.getElementById(div2);
 
-  if(el1.style.display === 'none' && el2.style.display === 'none') {
+  if (el1.style.display === 'none' && el2.style.display === 'none') {
     el1.style.display = 'inline-block';
     el2.style.display = 'inline-block';
   } else {
@@ -17,10 +17,10 @@ function toggleHugesubmenu(div1, div2){
 
 
 // Function to handle submenus
-function load(){
+function load() {
   var menuon = document.getElementById('menuon');
   var WorkItem = document.getElementById('WorkItem');
-  WorkItem.addEventListener('click', function(){
+  WorkItem.addEventListener('click', function() {
     toggleHugesubmenu('Work', 'WorkUl');
     if (WorkItem.className === '' && menuon.className === '') {
       WorkItem.className = WorkItem.className + ' active';
@@ -30,7 +30,7 @@ function load(){
       NewsItem.className = '';
       EventsItem.className = '';
       ContactItem.className = '';
-      if(menuon.className === '') {
+      if (menuon.className === '') {
         menuon.className = menuon.className + ' menuon';
       } else {
         menuon.className = '';
@@ -55,7 +55,7 @@ function load(){
   }, false);
 
   var AboutItem = document.getElementById('AboutItem');
-  AboutItem.addEventListener('click', function(){
+  AboutItem.addEventListener('click', function() {
     toggleHugesubmenu('About', 'AboutUl');
     if (AboutItem.className === '' && menuon.className === '') {
       AboutItem.className = AboutItem.className + ' active';
@@ -65,7 +65,7 @@ function load(){
       NewsItem.className = '';
       EventsItem.className = '';
       ContactItem.className = '';
-      if(menuon.className === '') {
+      if (menuon.className === '') {
         menuon.className = menuon.className + ' menuon';
       } else {
         menuon.className = '';
@@ -91,7 +91,7 @@ function load(){
   }, false);
 
   var CareersItem = document.getElementById('CareersItem');
-  CareersItem.addEventListener('click', function(){
+  CareersItem.addEventListener('click', function() {
     toggleHugesubmenu('Careers', 'CareersUl');
     if (CareersItem.className === '' && menuon.className === '') {
       CareersItem.className = CareersItem.className + ' active';
@@ -101,7 +101,7 @@ function load(){
       NewsItem.className = '';
       EventsItem.className = '';
       ContactItem.className = '';
-      if(menuon.className === '') {
+      if (menuon.className === '') {
         menuon.className = menuon.className + ' menuon';
       } else {
         menuon.className = '';
@@ -127,7 +127,7 @@ function load(){
   }, false);
 
   var IdeasItem = document.getElementById('IdeasItem');
-  IdeasItem.addEventListener('click', function(){
+  IdeasItem.addEventListener('click', function() {
     toggleHugesubmenu('Ideas', 'IdeasUl');
     if (IdeasItem.className === '' && menuon.className === '') {
       IdeasItem.className = IdeasItem.className + ' active';
@@ -137,7 +137,7 @@ function load(){
       NewsItem.className = '';
       EventsItem.className = '';
       ContactItem.className = '';
-      if(menuon.className === '') {
+      if (menuon.className === '') {
         menuon.className = menuon.className + ' menuon';
       } else {
         menuon.className = '';
@@ -163,7 +163,7 @@ function load(){
   }, false);
 
   var NewsItem = document.getElementById('NewsItem');
-  NewsItem.addEventListener('click', function(){
+  NewsItem.addEventListener('click', function() {
     toggleHugesubmenu('News', 'NewsUl');
     if (NewsItem.className === '' && menuon.className === '') {
       NewsItem.className = NewsItem.className + ' active';
@@ -173,7 +173,7 @@ function load(){
       IdeasItem.className = '';
       EventsItem.className = '';
       ContactItem.className = '';
-      if(menuon.className === '') {
+      if (menuon.className === '') {
         menuon.className = menuon.className + ' menuon';
       } else {
         menuon.className = '';
@@ -199,7 +199,7 @@ function load(){
   }, false);
 
   var EventsItem = document.getElementById('EventsItem');
-  EventsItem.addEventListener('click', function(){
+  EventsItem.addEventListener('click', function() {
     toggleHugesubmenu('Events', 'EventsUl');
     if (EventsItem.className === '' && menuon.className === '') {
       EventsItem.className = EventsItem.className + ' active';
@@ -209,7 +209,7 @@ function load(){
       IdeasItem.className = '';
       NewsItem.className = '';
       ContactItem.className = '';
-      if(menuon.className === '') {
+      if (menuon.className === '') {
         menuon.className = menuon.className + ' menuon';
       } else {
         menuon.className = '';
@@ -235,7 +235,7 @@ function load(){
   }, false);
 
   var ContactItem = document.getElementById('ContactItem');
-  ContactItem.addEventListener('click', function(){
+  ContactItem.addEventListener('click', function() {
     toggleHugesubmenu('Contact', 'ContactUl');
     if (ContactItem.className === '' && menuon.className === '') {
       ContactItem.className = ContactItem.className + ' active';
@@ -245,7 +245,7 @@ function load(){
       IdeasItem.className = '';
       NewsItem.className = '';
       EventsItem.className = '';
-      if(menuon.className === '') {
+      if (menuon.className === '') {
         menuon.className = menuon.className + ' menuon';
       } else {
         menuon.className = '';

@@ -1,3 +1,12 @@
+# Exercise at 80%.
+
+## Pending.
+
+* Responsive.
+* Fix minor Bugs.
+
+----------------------------------------------------
+
 # Huge Navigation Exercise
 
 ## Overview

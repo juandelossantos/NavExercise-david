@@ -2,91 +2,66 @@
 * {
   box-sizing: border-box;
 }
-
-body
-{
-    color: #333;
-
+body {
+  color: #333;
 }
-
-header
-{
-    height: 72px;
-
-    color: #fff;
-    background: #ec008c;
-}
-
-h1
-{
+header {
+  height: 72px;
   color: #fff;
+  background: #ec008c;
+}
+h1 {
   margin: 0 auto;
   text-align: center;
+  color: #fff;
 }
 
 /* Menu Styles */
-.logo
-{
-    display: inline-block;
-    float: left;
 
-    width: 60px;
-    height: 72px;
-    margin-right: 24px;
+.logo {
+  display: inline-block;
+  float: left;
+  width: 60px;
+  height: 72px;
+  margin-right: 24px;
 }
-
 .logo img {
   width: 100%;
-  margin-left: 24px;
   margin-top: 24px;
+  margin-left: 24px;
 }
-
-.menuwrap
-{
-    display: inline-block;
-    float: left;
-
-    height: 72px;
-}
-
-
-.hugemenu
-{
-    display: block;
-    float: left;
-    list-style-type: none;
-    height: 72px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-}
-
-.hugemenu li
-{
-
+.menuwrap {
+  display: inline-block;
   float: left;
   height: 72px;
-
-
 }
-
-
-.hugemenu li a {
-  display:inline-block;
-  color: #fff;
-  text-decoration: none;
+.hugemenu {
+  display: block;
+  float: left;
   height: 72px;
-  line-height: 72px;
-  padding-left: 24px;
-  padding-right: 24px;
-  vertical-align: middle;
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style-type: none;
+}
+.hugemenu li {
+  float: left;
+  height: 72px;
+}
+.hugemenu li a {
   font-family: 'HUGEAvantGardeBold';
   font-size: 1.313em;
+  line-height: 72px;
+  display: inline-block;
+  height: 72px;
+  padding-right: 24px;
+  padding-left: 24px;
+  vertical-align: middle;
+  text-decoration: none;
+  color: #fff;
 }
-
-.hugemenu li a:hover,
-.active {
-  background-color: #fff;
+.hugemenu li a:hover, .active {
   color: #ec008c !important;
+  background-color: #fff;
 }
 
 /* sub menu */
@@ -95,111 +70,99 @@ h1
   position: absolute;
   z-index: 100;
 }
-
 .hugesubmenu {
   position: fixed;
-  /*display:block;*/
   width: 230px;
   height: auto;
 }
-
 .hugesubmenu ul {
-  /*display: inline-block;*/
-  list-style-type: none;
-  background-color: #fff;
-  color: #333;
-  padding-left: 0px;
   padding-top: 12px;
-}
-
-.hugesubmenu li {
-  height: 48px;
-  width: 100%;
-  display: block;
-}
-
-.hugesubmenu li a {
+  padding-left: 0;
+  list-style-type: none;
   color: #333;
+  background-color: #fff;
+}
+.hugesubmenu li {
+  display: block;
   width: 100%;
   height: 48px;
-  line-height: 48px;
-  margin-top: 0px;
-  margin-bottom: 0px;
+}
+.hugesubmenu li a {
   font-family: 'Galaxie';
   font-size: 1em;
+  line-height: 48px;
+  width: 100%;
+  height: 48px;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #333;
 }
-
 .hugesubmenu li a:hover {
-  background-color: #eeeeee;
+  background-color: #eee;
 }
-
 .menuon {
   position: absolute;
-  background-color: rgba(0, 0, 0, 0.5);
   width: 100%;
   height: 100%;
+  background-color: rgba(0, 0, 0, .5);
 }
 
 /* Fold - Hero */
 
 .hero {
   display: block;
+  clear: both;
   width: 100%;
   height: 640px;
-  background-image: url('../images/background-image.jpg');
-  background-size: 100%;
-  background-repeat: no-repeat;
   margin: 0 auto;
   text-align: center;
-  clear: both;
+  background-image: url('../images/background-image.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
-
 .wrapherotext {
+  position: relative;
   width: 100%;
   height: 100%;
-  position: relative;
   margin: 0 auto;
 }
-
 .wrapherotext h1 {
   font-size: 7.500em;
-  width: 70%;
-  display: inline-block;
   position: relative;
   top: 50%;
+  display: inline-block;
+  width: 70%;
   transform: translateY(-50%);
 }
 
 /* Content */
 
 .content {
-  position:relative;
+  position: relative;
   display: block;
   width: 968px;
   height: auto;
   margin: 60px auto;
 }
-
 .content p {
-  font-size: 1.500em;
   font-family: 'Galaxie';
+  font-size: 1.500em;
+  margin-top: 0;
   text-align: justify;
-  margin-top: 0px;
 }
-
 
 /* Footer */
 
 .hugefooter {
-  width: 100%;
-  height: 40px;
-  color: #fff;
-  margin: 0 auto;
-  position: fixed;
-  bottom: 0;
-  background-color: #ec008c;
-  line-height: 40px;
-  text-align: center;
   font-family: 'Galaxie';
   font-size: 12px;
+  line-height: 40px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  margin: 0 auto;
+  text-align: center;
+  color: #fff;
+  background-color: #ec008c;
 }

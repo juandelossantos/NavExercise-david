@@ -1,0 +1,127 @@
+<nav class="hugenav">
+  <div class="logo">
+    <img src="images/HUGE-white.png" alt="Logo HUGE" />
+  </div>
+  <div class="menuwrap">
+    <ul class="hugemenu">
+      <% for (i = 0; i < navlabels.length; i++) {%>
+      <li>
+        <a href= "<%=  navUrl[i] %>" id="<%=  navlabels[i] %>Item"><%=  navlabels[i] %></a>
+        <% if (navlabels[i] === 'Work') { %>
+        <div class="wrapsubmenu">
+          <nav class="hugesubmenu" id="<%= navlabels[i] %>"style="display: none;">
+            <ul id="<%= navlabels[i] %>Ul" style="display: none;">
+
+                <% for (j = 0; j < navWorkItems.length; j++) { %>
+                  <li>
+                    <a href= "<%=  navWorkUrl[j] %>"><%=  navWorkItems[j] %></a>
+                  </li>
+                <% } %>
+
+
+            </ul>
+          </nav><!-- submenu Work-->
+
+        </div><!-- wrap submenu -->
+        <% } else if (navlabels[i] === 'About') { %>
+        <div class="wrapsubmenu">
+          <nav class="hugesubmenu" id="<%= navlabels[i] %>" style="display: none;">
+            <ul id="<%= navlabels[i] %>Ul" style="display: none;">
+
+                <% for (j = 0; j < navAboutItems.length; j++) { %>
+                  <li>
+                    <a href= "<%=  navAboutUrl[j] %>"><%=  navAboutItems[j] %></a>
+                  </li>
+                <% } %>
+
+
+            </ul>
+          </nav><!-- submenu About-->
+
+        </div><!-- wrap submenu -->
+        <% } else if (navlabels[i] === 'Careers') { %>
+        <div class="wrapsubmenu">
+          <nav class="hugesubmenu" id="<%= navlabels[i] %>" style="display: none;">
+            <ul id="<%= navlabels[i] %>Ul" style="display: none;">
+
+                <% for (j = 0; j < navCareersItems.length; j++) { %>
+                  <li>
+                    <a href= "<%=  navCareersUrl[j] %>"><%=  navCareersItems[j] %></a>
+                  </li>
+                <% } %>
+
+
+            </ul>
+          </nav><!-- submenu Careers -->
+
+        </div><!-- wrap submenu -->
+        <% } else if (navlabels[i] === 'Ideas') { %>
+        <div class="wrapsubmenu">
+          <nav class="hugesubmenu" id="<%= navlabels[i] %>" style="display: none;">
+            <ul id="<%= navlabels[i] %>Ul" style="display: none;">
+
+                <% for (j = 0; j < navIdeasItems.length; j++) { %>
+                  <li>
+                    <a href= "<%=  navIdeasUrl[j] %>"><%=  navIdeasItems[j] %></a>
+                  </li>
+                <% } %>
+
+
+            </ul>
+          </nav><!-- submenu Ideas -->
+
+        </div><!-- wrap submenu -->
+        <% } else if (navlabels[i] === 'News') { %>
+        <div class="wrapsubmenu">
+          <nav class="hugesubmenu" id="<%= navlabels[i] %>" style="display: none;">
+            <ul id="<%= navlabels[i] %>Ul" style="display: none;">
+
+                <% for (j = 0; j < navNewsItems.length; j++) { %>
+                  <li>
+                    <a href= "<%=  navNewsUrl[j] %>"><%=  navNewsItems[j] %></a>
+                  </li>
+                <% } %>
+
+
+            </ul>
+          </nav><!-- submenu News -->
+
+        </div><!-- wrap submenu -->
+        <% } else if (navlabels[i] === 'Events') { %>
+        <div class="wrapsubmenu">
+          <nav class="hugesubmenu" id="<%= navlabels[i] %>" style="display: none;">
+            <ul id="<%= navlabels[i] %>Ul" style="display: none;">
+
+                <% for (j = 0; j < navEventsItems.length; j++) { %>
+                  <li>
+                    <a href= "<%=  navEventsUrl[j] %>"><%=  navEventsItems[j] %></a>
+                  </li>
+                <% } %>
+
+
+            </ul>
+          </nav><!-- submenu Events -->
+
+        </div><!-- wrap submenu -->
+        <% } else if (navlabels[i] === 'Contact') { %>
+        <div class="wrapsubmenu">
+          <nav class="hugesubmenu" id="<%= navlabels[i] %>" style="display: none;">
+            <ul id="<%= navlabels[i] %>Ul" style="display: none;">
+
+                <% for (j = 0; j < navContactItems.length; j++) { %>
+                  <li>
+                    <a href= "<%=  navContactUrl[j] %>"><%=  navContactItems[j] %></a>
+                  </li>
+                <% } %>
+
+
+            </ul>
+          </nav><!-- submenu Contact-->
+
+        </div><!-- wrap submenu -->
+        <% } %>
+      </li>
+      <% } %>
+    </ul>
+  </div>
+</nav>

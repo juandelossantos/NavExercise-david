@@ -4,6 +4,7 @@
 
 * Responsive.
 * Fix minor Bugs.
+* Write what I Did in detail.
 
 ----------------------------------------------------
 

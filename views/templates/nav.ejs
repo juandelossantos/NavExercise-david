@@ -1,12 +1,53 @@
 <nav class="hugenav">
-  <div class="logo">
-    <img src="images/HUGE-white.png" alt="Logo HUGE" />
+  <div class="logo" id="logo">
+
   </div>
-  <div class="menuwrap">
+  <div class="hugemenu-close" id="hugemenu-close">
+    <span class="menuclose">
+      <img src="images/toggle-close.svg" alt="close menu" />
+    </span>
+  </div>
+  <div class="menuwrap" id="menuwrap">
+
     <ul class="hugemenu">
       <% for (i = 0; i < navlabels.length; i++) {%>
-      <li>
-        <a href= "<%=  navUrl[i] %>" id="<%=  navlabels[i] %>Item"><%=  navlabels[i] %></a>
+      <li id="<%=  navlabels[i] %>submenu">
+        <a href= "<%=  navUrl[i] %>" id="<%=  navlabels[i] %>Item"><%=  navlabels[i] %>
+        <% if (navlabels[i] === 'Work') { %>
+          <% if (navWorkItems.length > 0) { %>
+            <span class="hugesubmenu-openclose" id="opencloseWork"></span>
+          <% } %>
+        <% } %>
+        <% if (navlabels[i] === 'About') { %>
+          <% if (navAboutItems.length > 0) { %>
+            <span class="hugesubmenu-openclose" id="opencloseAbout"></span>
+          <% } %>
+        <% } %>
+        <% if (navlabels[i] === 'Careers') { %>
+          <% if (navCareersItems.length > 0) { %>
+            <span class="hugesubmenu-openclose" id="opencloseCareers"></span>
+          <% } %>
+        <% } %>
+        <% if (navlabels[i] === 'Ideas') { %>
+          <% if (navIdeasItems.length > 0) { %>
+            <span class="hugesubmenu-openclose" id="opencloseIdeas"></span>
+          <% } %>
+        <% } %>
+        <% if (navlabels[i] === 'News') { %>
+          <% if (navNewsItems.length > 0) { %>
+            <span class="hugesubmenu-openclose" id="opencloseNews"></span>
+          <% } %>
+        <% } %>
+        <% if (navlabels[i] === 'Events') { %>
+          <% if (navEventsItems.length > 0) { %>
+            <span class="hugesubmenu-openclose" id="opencloseEvents"></span>
+          <% } %>
+        <% } %>
+        <% if (navlabels[i] === 'Contact') { %>
+          <% if (navContactItems.length > 0) { %>
+            <span class="hugesubmenu-openclose" id="opencloseContact"></span>
+          <% } %>
+        <% } %></a>
         <% if (navlabels[i] === 'Work') { %>
         <div class="wrapsubmenu">
           <nav class="hugesubmenu" id="<%= navlabels[i] %>"style="display: none;">
@@ -123,5 +164,6 @@
       </li>
       <% } %>
     </ul>
+    <div class="menuwrap-footer">&copy; 2014 Huge. All Rights Reserved.</div>
   </div>
 </nav>

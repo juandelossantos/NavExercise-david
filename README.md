@@ -1,10 +1,10 @@
-# Exercise at 80%.
+# David Sierra
 
-## Pending.
+## install.
 
-* Responsive.
-* Fix minor Bugs.
-* Write what I Did in detail.
+```
+$ npm i && npm start
+```
 
 ----------------------------------------------------
 
